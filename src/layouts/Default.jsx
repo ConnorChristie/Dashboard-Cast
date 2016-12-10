@@ -15,7 +15,7 @@ class DefaultLayout extends Component
 	{
 		return (
 			<div id="global">
-				<BackgroundImages />
+				<BackgroundImages timeout={15000} />
 			</div>
 		);
 	}
