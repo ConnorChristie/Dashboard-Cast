@@ -3,6 +3,7 @@ import ReactDom from 'react-dom'
 
 import BackgroundImages from '../components/BackgroundImages'
 import SplashScreen from '../components/SplashScreen'
+import Widget from '../components/Widget'
 
 class DefaultLayout extends Component
 {
@@ -16,6 +17,9 @@ class DefaultLayout extends Component
 		return (
 			<div id="global">
 				<BackgroundImages timeout={15000} />
+				<div id="layoutContainer">
+                    <Widget />
+				</div>
 			</div>
 		);
 	}

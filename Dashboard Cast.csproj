@@ -83,7 +83,6 @@
     <Content Include="src\assets\fonts\roboto-regular-webfont.woff" />
     <Content Include="src\styles\bootstrap.scss" />
     <Content Include="src\styles\general.scss" />
-    <Content Include="src\components\WidgetSpec.jsx" />
     <Content Include="src\styles\fonts.scss" />
     <Content Include=".babelrc" />
     <None Include="web.Debug.config">

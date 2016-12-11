@@ -1,15 +1,28 @@
-﻿import React from 'react';
+﻿import React, { Component } from 'react';
 
-var Widget = React.createClass({
-	render() {
+class Widget extends Component
+{
+	constructor(props)
+	{
+		super(props);
+	}
+
+	render()
+	{
 		return (
 			<div className="card visible">
 				<div className="content">
-					Hello world
+					<h1 className="time primaryTitle">11:10</h1>
+					<h4 className="date secondaryTitle">December 10, 2016</h4>
 				</div>
 			</div>
 		);
 	}
-});
 
-module.exports = Widget;
+	componentDidMount()
+	{
+		$(".content").show().css("opacity", 1);
+	}
+}
+
+export default Widget;
